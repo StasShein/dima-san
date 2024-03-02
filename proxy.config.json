@@ -1,0 +1,12 @@
+{
+  "/echo":{
+    "target": "https://786836.leadvertex.ru/api/webmaster/v2/addOrder.html",
+    "changeOrigin": true,
+    "secure": false,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/echo": ""
+    }
+  }
+}
+
