@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0 auto !important;
+  font-family:  'Exo', monospace !important;
+  position: relative;
+  box-sizing: content-box;
+}
+
+.active{
+  border: 1px solid transparent;
+  transition: 0.5s;
+  &:active{
+    transform: scale(0.95) !important;
+    border: 1px solid transparent;
+  }
+}
+
+.hover{
+  transition: 0.5s;
+  &:hover{
+    transform: scale(1.05);
+  }
+
+
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@media screen and (max-width: 900px) {
+  body{
+    max-width: 900px;
+    overflow-x: hidden;
+  }
+}

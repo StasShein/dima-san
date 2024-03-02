@@ -1,0 +1,313 @@
+:host ::ng-deep{
+  .___navigation.___navigation__next{
+    top:0 !important;
+    bottom: 130px !important;
+    right: -125px !important;
+    background-image: url(/assets/next.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #18754500 !important;
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 0 !important;
+    transition: 0.2s;
+
+    &:hover{
+      transform: scale(1.05);
+    }
+
+    &:active{
+      transform: scale(0.90);
+    }
+
+    svg{
+      display: none;
+    }
+  }
+  .___navigation.___navigation__prev{
+    top:0 !important;
+    bottom: 130px !important;
+    left: -125px !important;
+    background-image: url(/assets/prev.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #18754500 !important;
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 0 !important;
+    transition: 0.2s;
+
+    &:hover{
+      transform: scale(1.05);
+    }
+
+    &:active{
+      transform: scale(0.90);
+    }
+
+    svg{
+      display: none;
+    }
+  }
+
+  .____wts_slider___wrapper{
+    overflow: visible !important;
+  }
+
+  .___dot{
+    background-color: #36C27A99 !important;
+    width: 15px !important;
+    height: 15px !important;
+  }
+
+  .___dot.__active{
+    background-color: #187545 !important;
+  }
+}
+
+.container{
+  position: relative;
+  width: 100%;
+
+  h2{
+    display: none;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+
+    span{
+      color: #36C27A;
+    }
+  }
+
+  wts-slider{
+    width: 900px;
+    height: 750px;
+    display: flex;
+    margin: 0 auto;
+    overflow: visible;
+
+    .slide-1, .slide-2, .slide-3{
+      width: 900px !important;
+      height: 750px;
+      box-shadow: 0px 4px 4px 0px #809CFF78;
+      background: #DBEBFF;
+      border-radius: 15px;
+
+      .slide-block{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin: 50px;
+        position: relative;
+
+        &::after{
+          content: 'somo dimagrita 20 chili';
+          background-color: #187545;
+          padding: 20px;
+          position: absolute;
+          bottom: -45px;
+          right: -50px;
+          border-radius: 0 0 15px 0;
+          color: white;
+          font-weight: 600;
+          font-size: 18px;
+        }
+        .image{
+          img{
+            width: 380px;
+            height: 380px;
+          }
+        }
+        .info{
+          font-weight: 400;
+          font-size: 18px;
+
+          .info-person{
+            h3{
+              font-weight: 700;
+              font-size: 20px;
+              span{
+                font-size: 14px;
+              }
+            }
+          }
+
+          .date{
+            color: #696969;
+            text-align: end;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px){
+  :host ::ng-deep{
+    .___navigation.___navigation__next{
+      top:0 !important;
+      bottom: 130px !important;
+      right: -75px !important;
+    }
+    .___navigation.___navigation__prev{
+      top:0 !important;
+      bottom: 130px !important;
+      left: -65px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1060px){
+  :host ::ng-deep{
+    .___navigation.___navigation__next{
+      display: none !important;
+    }
+    .___navigation.___navigation__prev{
+      display: none !important;
+    }
+  }
+}
+
+@media screen and (max-width: 900px){
+
+  .container{
+    display: flex;
+    justify-content: center;
+
+    wts-slider{
+      max-width: 800px;
+      width: 80vw;
+      height: 900px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin: 30px 0;
+
+      .slide-1, .slide-2, .slide-3{
+        max-width: 800px !important;
+        width: 80vw;
+        height: 835px;
+        border-radius: 0;
+
+        .slide-block{
+          flex-direction: column;
+          align-items: center;
+          width: 70vw;
+          border-radius: 15px;
+
+          &::after{
+            content: 'somo dimagrita 20 chili';
+            background-color: #187545;
+            padding: 20px;
+            position: absolute;
+            bottom: -77px;
+            right: -32px;
+            border-radius: 0 0 15px 0;
+            color: white;
+            font-weight: 600;
+            font-size: 18px;
+          }
+          .image{
+            img{
+              width: 380px;
+              height: 380px;
+            }
+          }
+          .info{
+            font-weight: 400;
+            font-size: 18px;
+
+            .info-person{
+              h3{
+                font-weight: 700;
+                font-size: 20px;
+                span{
+                  font-size: 14px;
+                }
+              }
+            }
+
+            .date{
+              color: #696969;
+              text-align: end;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 660px){
+  .container{
+    wts-slider{
+      .slide-1, .slide-2, .slide-3{
+
+        height: 780px;
+        .slide-block{
+          &::after{
+            bottom: -93px;
+            right: -14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px){
+  .container{
+    width: 100%;
+    flex-direction: column;
+
+    h2{
+      display: block;
+      margin-top: 30px;
+    }
+
+    wts-slider{
+      width: 100%;
+
+      .slide-1, .slide-2, .slide-3{
+
+        .slide-block{
+
+          &::after{
+            bottom: -131px;
+            right: -66px;
+          }
+          .image{
+            img{
+              width: 345px;
+              height: 345px;
+            }
+          }
+          .info{
+            font-weight: 400;
+            font-size: 15px;
+
+            .info-person{
+              h3{
+                font-weight: 700;
+                font-size: 20px;
+                span{
+                  font-size: 14px;
+                }
+              }
+            }
+
+            .date{
+              color: #696969;
+              text-align: end;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

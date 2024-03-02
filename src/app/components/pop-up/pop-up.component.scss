@@ -1,0 +1,70 @@
+.container{
+  padding: 50px 80px;
+  width: 50vw;
+  max-width: 1200px;
+  background-image: url(/assets/order-background.png);
+  background-size: cover;
+   .pop-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+
+    .header{
+      font-weight: 600;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      img{
+        width: 190px;
+        height: 140px;
+      }
+    }
+
+    .image{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+
+      img{
+        position: relative;
+        left: -45px;
+        width: 340px;
+        height: 265px;
+      }
+
+      .text{
+        font-size: 22px;
+        width: 50%;
+        font-weight: 600;
+        text-align: center;
+
+        h3{
+          color: #36C27A;
+          text-align: center;
+          font-size: 30px;
+          font-weight: 700;
+        }
+        .order-button{
+          margin: 0 auto;
+          width: 75%;
+          height: auto;
+          background-color: #36C27A;
+          border-radius: 15px;
+          text-align: center;
+          color: white;
+          font-size: 25px;
+          font-weight: 700;
+          padding: 30px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,389 @@
+.container{
+  background: linear-gradient(95.21deg, rgba(231, 242, 255, 0.6) 0%, rgba(0, 117, 255, 0.06) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 1900px;
+
+  .tablets{
+    padding: 50px 30px;
+    flex-direction: row;
+    display: flex;
+    gap: 50px;
+    height: auto;
+
+
+    .tablets-info{
+      flex: 1;
+      margin-top: 30px;
+      .info-header{
+        display: flex;
+
+        .text-header{
+          font-weight: 700;
+          font-size: 35px;
+          width: 450px;
+
+          h3{
+            color: #36c27a;
+            text-decoration: underline;
+            margin: 0;
+          }
+
+          p{
+            margin: 0;
+          }
+        }
+
+        .logo-header{
+          width: 144px;
+          height: 153px;
+        }
+      }
+
+      .main-info{
+        font-size: 18px;
+        font-weight: 500;
+        span{
+          color: #187545;
+        }
+      }
+    }
+
+    .tablets-pluses-block{
+      flex: 1;
+      display: flex;
+
+      .tablets-pluses{
+        flex: 1;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .plus-block{
+          width: 250px;
+          height: 50px;
+          font-weight: 700;
+          font-size: 16px;
+          text-align: center;
+          border: 2px solid #36C27A;
+          border-radius: 15px;
+          position: relative;
+
+          p{
+            margin-top: 15px;
+          }
+
+          &::after{
+            content: url('/assets/Polygon\ 2.png');
+            position: absolute;
+            top: 15px;
+            right: -60px;
+          }
+        }
+      }
+
+      .tablets-image{
+        flex: 1;
+        .image{
+          position: relative;
+          max-width: 839px;
+          width: 100%;
+          img{
+
+            position: relative;
+            top: 0px;
+            left: 0px;
+          }
+        }
+      }
+    }
+
+
+  }
+}
+
+@media screen and (max-width: 1570px){
+  .container{
+
+    .tablets{
+      gap: 10px;
+      padding: 50px 0 50px 30px;
+
+      .tablets-info{
+        .info-header{
+          display: flex;
+
+          .text-header{
+            font-weight: 700;
+            font-size: 35px;
+            width: 350px;
+          }
+        }
+      }
+
+      .tablets-pluses-block{
+        .tablets-pluses{
+          height: 400px;
+          .plus-block{
+            width: 230px;
+            height: 50px;
+            font-weight: 700;
+            font-size: 16px;
+            text-align: center;
+            border: 2px solid #36C27A;
+            border-radius: 15px;
+            position: relative;
+
+            &::after{
+              right: -35px;
+            }
+          }
+        }
+
+        .tablets-image{
+          flex: 1;
+          .image{
+            position: relative;
+            max-width: 839px;
+            width: 100%;
+            img{
+              width: 400px;
+              position: relative;
+              top: 55px;
+              left: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px){
+  .container{
+
+    .tablets{
+      gap: 10px;
+      padding: 50px 0 50px 30px;
+
+      .tablets-info{
+        width: 380px;
+
+        .info-header{
+          display: flex;
+
+
+          .text-header{
+            font-weight: 700;
+            font-size: 26px;
+            width: 350px;
+          }
+
+          .logo-header{
+            width: 100px;
+            height: 109px;
+
+            img{
+              width: 100px;
+              height: 109px;
+            }
+          }
+        }
+        .main-info{
+          font-size: 15px;
+        }
+      }
+
+      .tablets-pluses-block{
+        .tablets-pluses{
+          height: 400px;
+          .plus-block{
+            font-size: 14px;
+
+            &::after{
+              right: -35px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px){
+  .container{
+
+    .tablets{
+      gap: 10px;
+      padding: 50px 0 50px 30px;
+
+      .tablets-info{
+        width: 320px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 900px){
+  .container{
+    .tablets{
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      .tablets-info{
+
+        .main-info{
+          font-size: 22px;
+        }
+      }
+      .tablets-pluses{
+        height: 300px !important;
+        align-items: end;
+
+        .plus-block{
+          font-size: 17.5px !important;
+          width: 230px;
+
+          &::after{
+            right: -25px !important;
+          }
+        }
+      }
+
+      .tablets-image{
+        .image{
+          img{
+            max-width: 400px;
+            max-height: 400px;
+            top: 10px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 660px){
+  .container{
+    width: 100%;
+    max-width: 660px;
+    display: block;
+    margin: 40px 0;
+    .tablets{
+      justify-content: center;
+      gap: 10px;
+      padding: 50px 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      min-height: 615px;
+      .tablets-info{
+        width: 100%;
+        .main-info{
+          font-size: 20px;
+        }
+      }
+      .tablets-pluses{
+        height: 300px !important;
+
+        .plus-block{
+          font-size: 15px;
+          width: 230px;
+
+          &::after{
+            right: -25px !important;
+          }
+        }
+      }
+
+      .tablets-image{
+        .image{
+          img{
+            max-width: 350px;
+            max-height: 350px;
+            top: 10px;
+            left: -100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px){
+  .container{
+    .tablets{
+      flex-direction: column-reverse;
+      padding: 50px 0;
+      gap: 0;
+      .tablets-info{
+        width: 90%;
+        padding: 0 30px;
+        .info-header{
+          .text-header{
+            font-weight: 700;
+            font-size: 25px;
+            text-align: center;
+          }
+
+          .logo-header{
+            display: none;
+          }
+        }
+
+        .main-info{
+          font-size: 15px;
+        }
+      }
+
+      .tablets-pluses-block{
+        background-color: white;
+        flex-direction: row-reverse;
+
+        .tablets-pluses{
+          justify-content: baseline;
+          align-items: baseline;
+
+          .plus-block{
+            width: 80%;
+            height: auto;
+            font-size: 11px !important;
+            text-align: center;
+            padding: 10px 0;
+
+            p{
+              margin-top: 5px;
+            }
+
+            &::after{
+              content: '';
+              position: absolute;
+              top: 5px;
+              right: 155px !important;
+            }
+          }
+        }
+
+        .tablets-image{
+          flex: 1;
+          .image{
+            position: relative;
+            max-width: 839px;
+            width: 200px;
+            img{
+              width: 60vw;
+              position: relative;
+              top: 0px;
+              left: -40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

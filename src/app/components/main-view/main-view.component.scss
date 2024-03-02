@@ -1,0 +1,266 @@
+.main-view{
+  background-image: url('/assets/fonstola\ 1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 1900px;
+  z-index: -2;
+
+  .main-view-content{
+    position: relative;
+    z-index: 1;
+
+    .main-view-logo{
+      justify-content: center;
+      display: flex;
+      padding-top: 20px;
+    }
+
+    .line{
+      width: 100px;
+      height: 4px;
+      background-color: #36C27A;
+      margin: 25px auto;
+    }
+
+
+    .main-view-text{
+      width: 840px;
+      margin: 0 auto;
+      font-size: 30px;
+      font-weight: 700;
+      color: white;
+      text-align: center;
+      span{
+        color: #5eeb2a;
+      }
+    }
+
+    .main-view-points{
+      display: flex;
+      justify-content: space-between;
+      width: 944px;
+      margin: 0 auto;
+      text-align: center;
+
+      .icon-done{
+        background-color: #268F71;
+        border-radius: 50%;
+      }
+
+      .point{
+        flex: 3;
+        color: white;
+        display: flex;
+        font-family:"Exo 2", cursive;
+        font-weight: 600;
+        font-size: 18px;
+
+        .icon-done{
+          background-color: #268F71;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+
+          img{
+            margin: 12px auto;
+          }
+        }
+
+        p{
+          margin: 12px;
+        }
+      }
+
+      .point-first{
+        flex: 4;
+        width: 322px;
+      }
+    }
+
+    .main-view-price{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .price{
+        display: flex;
+        width: 320px;
+        justify-content: space-between;
+        margin: 20px auto;
+
+        .old-price{
+          width: 140px;
+          color: #acabab;
+          text-decoration: line-through;
+          font-family: "Exo 2", cursive;
+          font-size: 35px;
+          font-weight: 600;
+        }
+
+        .new-price{
+          font-family: "Exo 2", cursive;
+          font-size: 35px;
+          font-weight: 600;
+          color: #60FF8C;
+        }
+      }
+
+        .order{
+          color: white;
+          font-weight: 700;
+          font-size: 25px;
+          font-family: Exo, cursive;
+          width: 290px;
+          height: 70px;
+          background-color: #36C27A;
+          border-radius: 15px;
+          margin: 30px auto;
+          cursor: pointer;
+        }
+
+    }
+  }
+}
+
+
+@media screen and (max-width: 900px){
+
+  .main-view{
+    .main-view-content{
+
+      .main-view-text{
+        max-width: 840px;
+        width: 90vw;
+      }
+
+      .main-view-points{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+
+        .point{
+          font-size: 23px;
+          width: 50%;
+        }
+
+        .point-first{
+          width: 60%;
+        }
+
+        .point-last{
+          width: 40%;
+        }
+      }
+
+      .main-view-price{
+
+        .price{
+          width: 320px;
+          height: 100px;
+
+        }
+
+          .order{
+            width: 400px;
+            height: 90px;
+          }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 660px){
+  .main-view{
+    .main-view-content{
+
+      .main-view-text{
+        font-size: 23px;
+      }
+
+      .main-view-points{
+        margin: 10px 0;
+
+
+        .point{
+          font-size: 20px;
+          width: 75%;
+        }
+
+        .point-first{
+          width: 85%;
+        }
+
+        .point-last{
+          width: 65%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px){
+  .main-view{
+    .main-view-content{
+      position: relative;
+
+      .main-view-logo{
+        width: 176px;
+        height: 166px;
+        margin: 0 auto;
+      }
+
+      .main-view-text{
+        font-size: 18px;
+      }
+
+      .main-view-points{
+        margin: 10px auto;
+        width: 80%;
+
+        .main-view-points{
+          display: flex;
+          justify-content: space-between;
+          width: 944px;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        .point{
+          font-size: 15px;
+          width: 75%;
+
+          .icon-done{
+            background-color: #268F71;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+
+            img{
+              width: 20px;
+              height: 15px;
+              margin: 8px auto;
+            }
+          }
+        }
+
+        .point-first{
+          width: 85%;
+        }
+
+        .point-last{
+          width: 65%;
+        }
+      }
+
+      .main-view-price{
+
+          .order{
+            width: 280px;
+            height: 90px;
+          }
+      }
+    }
+  }
+}
