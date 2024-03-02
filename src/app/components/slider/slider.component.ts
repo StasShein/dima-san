@@ -1,7 +1,9 @@
 import {
+  AfterViewInit,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
+  OnInit,
 } from '@angular/core';
 import { SliderOptions, WtsSliderModule } from 'wts-slider';
 
@@ -13,7 +15,7 @@ import { SliderOptions, WtsSliderModule } from 'wts-slider';
   styleUrl: './slider.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SliderComponent {
+export class SliderComponent implements OnInit, AfterViewInit {
   constructor(private cdr: ChangeDetectorRef) {}
 
   ngOnInit(): void {

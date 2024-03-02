@@ -3,7 +3,7 @@ import {
   HttpClientModule,
   HttpHeaders,
 } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -22,7 +22,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   templateUrl: './order.component.html',
   styleUrl: './order.component.scss',
 })
-export class OrderComponent {
+export class OrderComponent implements OnInit {
   public form!: FormGroup;
   public time!: any;
   public date: any = new Date().getTime();

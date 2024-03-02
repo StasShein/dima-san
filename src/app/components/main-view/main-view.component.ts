@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { PopUpComponent } from '../pop-up/pop-up.component';
 
@@ -9,7 +9,7 @@ import { PopUpComponent } from '../pop-up/pop-up.component';
   templateUrl: './main-view.component.html',
   styleUrl: './main-view.component.scss',
 })
-export class MainViewComponent {
+export class MainViewComponent implements OnInit {
   constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {
