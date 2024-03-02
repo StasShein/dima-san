@@ -6,7 +6,7 @@ import {
   MatDialogTitle,
   MatDialogContent,
 } from '@angular/material/dialog';
-import { data } from './components/show-ingredient/data-ingredients.const';
+import { DATA } from './components/show-ingredient/data-ingredients.const';
 
 @Component({
   selector: 'app-ingredients',
@@ -18,7 +18,7 @@ import { data } from './components/show-ingredient/data-ingredients.const';
 export class IngredientsComponent {
   constructor(public dialog: MatDialog) {}
 
-  public data = data;
+  public data = DATA;
 
   openDialog(num: number) {
     this.dialog.open(ShowIngredientComponent, {

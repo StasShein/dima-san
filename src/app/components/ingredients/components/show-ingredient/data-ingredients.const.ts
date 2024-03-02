@@ -1,4 +1,4 @@
-export const data: any = [
+export const DATA: any = [
   {
     image: '/assets/show-mate.png',
     header: 'Mate (Ilex paraguariensis St. Hill.)',
