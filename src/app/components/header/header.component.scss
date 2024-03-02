@@ -8,22 +8,20 @@ header {
     flex: 1;
   }
 
-  nav {
-    .header-href {
-      flex: 3;
-      display: flex;
+  .header-href {
+    flex: 3;
+    display: flex;
 
-      .main {
-        text-decoration: underline;
-        color: #36c27a;
-      }
+    .main {
+      text-decoration: underline;
+      color: #36c27a;
+    }
 
-      p {
-        text-align: center;
-        flex: 1;
-        color: white;
-        cursor: pointer;
-      }
+    p {
+      text-align: center;
+      flex: 1;
+      color: white;
+      cursor: pointer;
     }
   }
 }
@@ -32,20 +30,18 @@ header {
   header {
     font-size: 22px;
 
-    nav {
-      .header-href {
-        flex-direction: column;
-        font-weight: 500;
-        gap: 20px;
-        padding: 30px 0;
+    .header-href {
+      flex-direction: column;
+      font-weight: 500;
+      gap: 20px;
+      padding: 30px 0;
 
-        .main {
-          background-color: #36c27a;
-          color: white;
-          border-radius: 15px;
-          height: 40px;
-          padding: 15px 0;
-        }
+      .main {
+        background-color: #36c27a;
+        color: white;
+        border-radius: 15px;
+        height: 40px;
+        padding: 15px 0;
       }
     }
   }
@@ -53,11 +49,9 @@ header {
 
 @media screen and (max-width: 500px) {
   header {
-    nav {
-      .header-href {
-        p {
-          font-size: 15px;
-        }
+    .header-href {
+      p {
+        font-size: 15px;
       }
     }
   }

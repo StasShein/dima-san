@@ -15,6 +15,7 @@ export class FooterComponent {
   public scrollTo() {
     window.scrollTo({
       top: 0,
+      behavior: 'smooth',
     });
   }
 
