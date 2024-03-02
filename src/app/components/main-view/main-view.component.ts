@@ -13,11 +13,11 @@ export class MainViewComponent implements OnInit {
   constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {
-    // if(document.body.clientWidth > 900){
-    //   setTimeout(()=>{
-    //     this.openDialog()
-    //   },20000)
-    // }
+    if(document.body.clientWidth > 900){
+      setTimeout(()=>{
+        this.openDialog()
+      },20000)
+    }
   }
 
   public scrollTo() {
