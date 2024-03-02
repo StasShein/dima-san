@@ -1,62 +1,74 @@
 <div class="container" id="order">
-  <div class="order">
-    <div class="timer-block">
-      <div class="timer">
-        <cd-timer [countdown]="true" [startTime]="time" format="hms"></cd-timer>
-      </div>
-      <div class="price">
-        <div class="offer">
-          <p class="old-price">98 euro</p>
-          <p class="new-price">49 euro</p>
+  <article>
+    <div class="order">
+      <section>
+        <div class="timer-block">
+          <div class="timer">
+            <cd-timer
+              [countdown]="true"
+              [startTime]="time"
+              format="hms"
+            ></cd-timer>
+          </div>
+          <div class="price">
+            <div class="offer">
+              <p class="old-price">98 euro</p>
+              <p class="new-price">49 euro</p>
+            </div>
+            <p>L'offerta è limitata nel tempo! Fretta</p>
+          </div>
         </div>
-        <p>L'offerta è limitata nel tempo! Fretta</p>
-      </div>
+      </section>
+      <section>
+        <div class="tablets-image">
+          <img src="/assets/dima-san_3.png" alt="tablets" />
+        </div>
+      </section>
+      <section>
+        <div class="input-data">
+          <div class="input-block" [formGroup]="form">
+            <input
+              class="hover"
+              type="text"
+              formControlName="fio"
+              placeholder="Italia"
+              name=""
+              id=""
+            />
+            <input
+              class="hover"
+              type="text"
+              formControlName="country"
+              placeholder="il tuo nome"
+              name=""
+              id=""
+            />
+            <input
+              class="hover phone-input"
+              (keydown)="rejectNonNumeric($event)"
+              type="text"
+              formControlName="phone"
+              placeholder="Il tuo numero di telefono"
+              name=""
+              id=""
+            />
+            <div class="image">
+              <img src="/assets/natural.png" alt="natural" />
+              <img class="quality" src="/assets/quality.png" alt="quality" />
+              <img src="/assets/best-price.png" alt="best-price" />
+            </div>
+            <div class="submit-input hover active" (click)="sendFormValue()">
+              Ordinare
+            </div>
+            <div class="text">
+              <p>
+                *Lascia il tuo numero di telefono, il nostro responsabile ti
+                contatterà
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <div class="tablets-image">
-      <img src="/assets/dima-san_3.png" alt="tablets" />
-    </div>
-    <div class="input-data">
-      <div class="input-block" [formGroup]="form">
-        <input
-          class="hover"
-          type="text"
-          formControlName="fio"
-          placeholder="Italia"
-          name=""
-          id=""
-        />
-        <input
-          class="hover"
-          type="text"
-          formControlName="country"
-          placeholder="il tuo nome"
-          name=""
-          id=""
-        />
-        <input
-          class="hover phone-input"
-          (keydown)="rejectNonNumeric($event)"
-          type="text"
-          formControlName="phone"
-          placeholder="Il tuo numero di telefono"
-          name=""
-          id=""
-        />
-        <div class="image">
-          <img src="/assets/natural.png" alt="natural" />
-          <img class="quality" src="/assets/quality.png" alt="quality" />
-          <img src="/assets/best-price.png" alt="best-price" />
-        </div>
-        <div class="submit-input hover active" (click)="sendFormValue()">
-          Ordinare
-        </div>
-        <div class="text">
-          <p>
-            *Lascia il tuo numero di telefono, il nostro responsabile ti
-            contatterà
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+  </article>
 </div>

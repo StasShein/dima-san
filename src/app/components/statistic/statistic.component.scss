@@ -1,93 +1,24 @@
-.statistic {
-  max-width: 1900px;
-  min-height: 365px;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-
-  .statistic-background {
-    width: 90%;
-    height: 90%;
-    position: relative;
+article {
+  .statistic {
+    max-width: 1900px;
+    min-height: 365px;
+    height: auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    padding-top: 50px;
 
-    img {
-      position: absolute;
-      z-index: -1;
-    }
-
-    .molecula-1 {
-      top: 160px;
-      right: 0;
-    }
-
-    .molecula-2 {
-      bottom: -70px;
-      left: 415px;
-    }
-
-    .molecula-3 {
-      top: 0;
-      left: 50%;
-    }
-
-    .molecula-4 {
-      left: 0;
-      top: 35px;
-    }
-
-    .statistic-block {
+    .statistic-background {
+      width: 90%;
+      height: 90%;
+      position: relative;
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
 
-      .statistic-info {
-        width: 290px;
-        background-color: #f4f4f4;
-        border-radius: 15px;
-        box-shadow: rgba(0, 0, 0, 0.25);
-        color: #268f71;
-        font-weight: 700;
-        font-size: 64px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-items: center;
-        padding: 40px 0;
-        box-shadow: 0px 4px 4px 0px #00000040;
-
-        span {
-          font-size: 20px;
-        }
+      img {
+        position: absolute;
+        z-index: -1;
       }
-
-      p {
-        font-size: 25px;
-        font-weight: 400;
-        text-align: center;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .statistic {
-    .statistic-background {
-      .molecula-3 {
-        top: 0;
-        left: 0;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 660px) {
-  .statistic {
-    .statistic-background {
-      gap: 30px;
-      padding: 50px 0;
 
       .molecula-1 {
         top: 160px;
@@ -95,40 +26,115 @@
       }
 
       .molecula-2 {
-        bottom: 0px;
-        left: 0;
+        bottom: -70px;
+        left: 415px;
       }
 
       .molecula-3 {
-        top: 320px;
-        left: 0;
+        top: 0;
+        left: 50%;
       }
 
       .molecula-4 {
-        left: unset;
-        top: unset;
-        bottom: 200px;
-        right: 0;
+        left: 0;
+        top: 35px;
       }
 
-      .block-1 {
-        position: relative;
-        left: -20%;
-      }
+      .statistic-block {
+        display: flex;
+        flex-direction: column;
 
-      .block-2 {
-        position: relative;
-        left: 20%;
-      }
+        .statistic-info {
+          width: 290px;
+          background-color: #f4f4f4;
+          border-radius: 15px;
+          box-shadow: rgba(0, 0, 0, 0.25);
+          color: #268f71;
+          font-weight: 700;
+          font-size: 64px;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-items: center;
+          padding: 40px 0;
+          box-shadow: 0px 4px 4px 0px #00000040;
 
-      .block-3 {
-        position: relative;
-        left: -20%;
-      }
+          span {
+            font-size: 20px;
+          }
+        }
 
-      .block-4 {
-        position: relative;
-        left: 20%;
+        p {
+          font-size: 25px;
+          font-weight: 400;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  article {
+    .statistic {
+      .statistic-background {
+        .molecula-3 {
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  article {
+    .statistic {
+      .statistic-background {
+        gap: 30px;
+        padding: 50px 0;
+
+        .molecula-1 {
+          top: 160px;
+          right: 0;
+        }
+
+        .molecula-2 {
+          bottom: 0px;
+          left: 0;
+        }
+
+        .molecula-3 {
+          top: 320px;
+          left: 0;
+        }
+
+        .molecula-4 {
+          left: unset;
+          top: unset;
+          bottom: 200px;
+          right: 0;
+        }
+
+        .block-1 {
+          position: relative;
+          left: -20%;
+        }
+
+        .block-2 {
+          position: relative;
+          left: 20%;
+        }
+
+        .block-3 {
+          position: relative;
+          left: -20%;
+        }
+
+        .block-4 {
+          position: relative;
+          left: 20%;
+        }
       }
     }
   }
