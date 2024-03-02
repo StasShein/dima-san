@@ -29,10 +29,10 @@ import { FooterComponent } from './components/footer/footer.component';
     SliderComponent,
     OrderComponent,
     ProcessComponent,
-    FooterComponent
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'dima-san';

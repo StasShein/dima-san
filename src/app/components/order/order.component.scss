@@ -1,15 +1,15 @@
-.container{
+.container {
   background-image: url(/assets/order-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 650px;
   height: auto;
-  font-family: 'Exo 2', cursive;
+  font-family: "Exo 2", cursive;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  .order{
+  .order {
     display: flex;
     flex-wrap: wrap;
     color: white;
@@ -18,10 +18,10 @@
     margin-left: -170px;
     gap: 40px;
 
-    .timer-block{
+    .timer-block {
       width: 450px;
 
-      .timer{
+      .timer {
         display: flex;
         justify-content: center;
         font-size: 70px;
@@ -29,8 +29,8 @@
         position: relative;
         height: 120px;
 
-        &::after{
-          content: 'Ori Minuti';
+        &::after {
+          content: "Ori Minuti";
           position: absolute;
           bottom: 0;
           left: 0;
@@ -40,8 +40,8 @@
           margin-left: 120px;
         }
 
-        &::before{
-          content: 'Secondi';
+        &::before {
+          content: "Secondi";
           position: absolute;
           bottom: 0;
           right: 0;
@@ -52,32 +52,32 @@
         }
       }
 
-      .price{
+      .price {
         margin-top: 30px;
 
-        .offer{
+        .offer {
           display: flex;
           position: relative;
           justify-content: center;
           gap: 50px;
 
-          .old-price{
+          .old-price {
             font-weight: 600;
             font-size: 35px;
-            color: #FFFFFF8C;
+            color: #ffffff8c;
             text-decoration: line-through;
             margin: 38px 25px 0;
           }
 
-          .new-price{
+          .new-price {
             font-weight: 700;
             font-size: 38px;
-            color: #60FF8C;
+            color: #60ff8c;
             margin: 38px 0 25px 0;
           }
 
-          &::after{
-            content: 'TOP PRICE';
+          &::after {
+            content: "TOP PRICE";
             color: white;
             font-weight: 600;
             font-size: 14px;
@@ -85,12 +85,12 @@
             top: 0;
             right: 0;
             border-radius: 3px;
-            background-color: #36C27A;
+            background-color: #36c27a;
             padding: 10px 15px;
           }
         }
 
-        p{
+        p {
           font-size: 20px;
           font-weight: 400;
           text-align: center;
@@ -99,16 +99,16 @@
       }
     }
 
-    .tablets-image{
+    .tablets-image {
       margin: 120px 30px 0 0px;
     }
 
-    .input-data{
-      .input-block{
+    .input-data {
+      .input-block {
         display: flex;
         flex-direction: column;
 
-        input{
+        input {
           width: 290px;
           height: 50px;
           border-radius: 10px;
@@ -119,34 +119,32 @@
           color: black;
           border: 1px solid transparent;
 
-          &:focus{
+          &:focus {
             border: 1px solid transparent;
             outline: none;
-
           }
         }
 
-        .image{
+        .image {
           display: flex;
           width: 280px;
           align-items: center;
 
-          img{
+          img {
             width: 80px;
             height: 80px;
           }
 
-          .quality{
+          .quality {
             width: 100px;
             height: 100px;
-
           }
         }
 
-        .submit-input{
+        .submit-input {
           width: 290px;
-          background-color: #E23E60;
-          box-shadow: 0px 4px 4px 0px #E23E60B0;
+          background-color: #e23e60;
+          box-shadow: 0px 4px 4px 0px #e23e60b0;
           border-radius: 10px;
           font-size: 22px;
           font-weight: 700;
@@ -156,13 +154,13 @@
           cursor: pointer;
         }
 
-        .text{
+        .text {
           width: 286px;
           font-size: 15px;
           font-weight: 400;
           text-align: center;
 
-          p{
+          p {
             margin: 0;
           }
         }
@@ -171,19 +169,19 @@
   }
 }
 
-@media screen and (max-width: 900px){
-  .container{
+@media screen and (max-width: 900px) {
+  .container {
     height: 1300px;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px 0;
-    .order{
+    .order {
       display: flex;
       flex-direction: column;
       margin-left: 0;
       gap: 0;
 
-      .tablets-image{
+      .tablets-image {
         margin: 0;
         height: 400px;
       }
@@ -191,29 +189,28 @@
   }
 }
 
-@media screen and (max-width: 500px){
-  .container{
+@media screen and (max-width: 500px) {
+  .container {
     padding: 50px 0;
-    .order{
-      .timer-block{
+    .order {
+      .timer-block {
         width: 250px;
-        .timer{
-          &::after{
-            font-size:18px;
+        .timer {
+          &::after {
+            font-size: 18px;
             margin-left: 35px;
           }
 
-          &::before{
+          &::before {
             font-size: 18px;
             margin-right: 0;
           }
         }
       }
 
-      .tablets-image{
+      .tablets-image {
         margin: 120px 0px 0 0px;
       }
-
     }
   }
 }

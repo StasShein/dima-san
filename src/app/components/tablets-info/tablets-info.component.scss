@@ -1,61 +1,64 @@
-.container{
-  background: linear-gradient(95.21deg, rgba(231, 242, 255, 0.6) 0%, rgba(0, 117, 255, 0.06) 100%);
+.container {
+  background: linear-gradient(
+    95.21deg,
+    rgba(231, 242, 255, 0.6) 0%,
+    rgba(0, 117, 255, 0.06) 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   max-width: 1900px;
 
-  .tablets{
+  .tablets {
     padding: 50px 30px;
     flex-direction: row;
     display: flex;
     gap: 50px;
     height: auto;
 
-
-    .tablets-info{
+    .tablets-info {
       flex: 1;
       margin-top: 30px;
-      .info-header{
+      .info-header {
         display: flex;
 
-        .text-header{
+        .text-header {
           font-weight: 700;
           font-size: 35px;
           width: 450px;
 
-          h3{
+          h3 {
             color: #36c27a;
             text-decoration: underline;
             margin: 0;
           }
 
-          p{
+          p {
             margin: 0;
           }
         }
 
-        .logo-header{
+        .logo-header {
           width: 144px;
           height: 153px;
         }
       }
 
-      .main-info{
+      .main-info {
         font-size: 18px;
         font-weight: 500;
-        span{
+        span {
           color: #187545;
         }
       }
     }
 
-    .tablets-pluses-block{
+    .tablets-pluses-block {
       flex: 1;
       display: flex;
 
-      .tablets-pluses{
+      .tablets-pluses {
         flex: 1;
         height: 500px;
         display: flex;
@@ -63,22 +66,22 @@
         justify-content: space-around;
         flex-wrap: wrap;
 
-        .plus-block{
+        .plus-block {
           width: 250px;
           height: 50px;
           font-weight: 700;
           font-size: 16px;
           text-align: center;
-          border: 2px solid #36C27A;
+          border: 2px solid #36c27a;
           border-radius: 15px;
           position: relative;
 
-          p{
+          p {
             margin-top: 15px;
           }
 
-          &::after{
-            content: url('/assets/Polygon\ 2.png');
+          &::after {
+            content: url("/assets/Polygon\ 2.png");
             position: absolute;
             top: 15px;
             right: -60px;
@@ -86,14 +89,13 @@
         }
       }
 
-      .tablets-image{
+      .tablets-image {
         flex: 1;
-        .image{
+        .image {
           position: relative;
           max-width: 839px;
           width: 100%;
-          img{
-
+          img {
             position: relative;
             top: 0px;
             left: 0px;
@@ -101,23 +103,20 @@
         }
       }
     }
-
-
   }
 }
 
-@media screen and (max-width: 1570px){
-  .container{
-
-    .tablets{
+@media screen and (max-width: 1570px) {
+  .container {
+    .tablets {
       gap: 10px;
       padding: 50px 0 50px 30px;
 
-      .tablets-info{
-        .info-header{
+      .tablets-info {
+        .info-header {
           display: flex;
 
-          .text-header{
+          .text-header {
             font-weight: 700;
             font-size: 35px;
             width: 350px;
@@ -125,32 +124,32 @@
         }
       }
 
-      .tablets-pluses-block{
-        .tablets-pluses{
+      .tablets-pluses-block {
+        .tablets-pluses {
           height: 400px;
-          .plus-block{
+          .plus-block {
             width: 230px;
             height: 50px;
             font-weight: 700;
             font-size: 16px;
             text-align: center;
-            border: 2px solid #36C27A;
+            border: 2px solid #36c27a;
             border-radius: 15px;
             position: relative;
 
-            &::after{
+            &::after {
               right: -35px;
             }
           }
         }
 
-        .tablets-image{
+        .tablets-image {
           flex: 1;
-          .image{
+          .image {
             position: relative;
             max-width: 839px;
             width: 100%;
-            img{
+            img {
               width: 400px;
               position: relative;
               top: 55px;
@@ -163,48 +162,46 @@
   }
 }
 
-@media screen and (max-width: 1150px){
-  .container{
-
-    .tablets{
+@media screen and (max-width: 1150px) {
+  .container {
+    .tablets {
       gap: 10px;
       padding: 50px 0 50px 30px;
 
-      .tablets-info{
+      .tablets-info {
         width: 380px;
 
-        .info-header{
+        .info-header {
           display: flex;
 
-
-          .text-header{
+          .text-header {
             font-weight: 700;
             font-size: 26px;
             width: 350px;
           }
 
-          .logo-header{
+          .logo-header {
             width: 100px;
             height: 109px;
 
-            img{
+            img {
               width: 100px;
               height: 109px;
             }
           }
         }
-        .main-info{
+        .main-info {
           font-size: 15px;
         }
       }
 
-      .tablets-pluses-block{
-        .tablets-pluses{
+      .tablets-pluses-block {
+        .tablets-pluses {
           height: 400px;
-          .plus-block{
+          .plus-block {
             font-size: 14px;
 
-            &::after{
+            &::after {
               right: -35px;
             }
           }
@@ -214,50 +211,47 @@
   }
 }
 
-@media screen and (max-width: 1050px){
-  .container{
-
-    .tablets{
+@media screen and (max-width: 1050px) {
+  .container {
+    .tablets {
       gap: 10px;
       padding: 50px 0 50px 30px;
 
-      .tablets-info{
+      .tablets-info {
         width: 320px;
       }
     }
   }
 }
 
-
-@media screen and (max-width: 900px){
-  .container{
-    .tablets{
+@media screen and (max-width: 900px) {
+  .container {
+    .tablets {
       flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
-      .tablets-info{
-
-        .main-info{
+      .tablets-info {
+        .main-info {
           font-size: 22px;
         }
       }
-      .tablets-pluses{
+      .tablets-pluses {
         height: 300px !important;
         align-items: end;
 
-        .plus-block{
+        .plus-block {
           font-size: 17.5px !important;
           width: 230px;
 
-          &::after{
+          &::after {
             right: -25px !important;
           }
         }
       }
 
-      .tablets-image{
-        .image{
-          img{
+      .tablets-image {
+        .image {
+          img {
             max-width: 400px;
             max-height: 400px;
             top: 10px !important;
@@ -268,13 +262,13 @@
   }
 }
 
-@media screen and (max-width: 660px){
-  .container{
+@media screen and (max-width: 660px) {
+  .container {
     width: 100%;
     max-width: 660px;
     display: block;
     margin: 40px 0;
-    .tablets{
+    .tablets {
       justify-content: center;
       gap: 10px;
       padding: 50px 30px;
@@ -282,28 +276,28 @@
       flex-wrap: wrap;
       gap: 50px;
       min-height: 615px;
-      .tablets-info{
+      .tablets-info {
         width: 100%;
-        .main-info{
+        .main-info {
           font-size: 20px;
         }
       }
-      .tablets-pluses{
+      .tablets-pluses {
         height: 300px !important;
 
-        .plus-block{
+        .plus-block {
           font-size: 15px;
           width: 230px;
 
-          &::after{
+          &::after {
             right: -25px !important;
           }
         }
       }
 
-      .tablets-image{
-        .image{
-          img{
+      .tablets-image {
+        .image {
+          img {
             max-width: 350px;
             max-height: 350px;
             top: 10px;
@@ -315,53 +309,53 @@
   }
 }
 
-@media screen and (max-width: 500px){
-  .container{
-    .tablets{
+@media screen and (max-width: 500px) {
+  .container {
+    .tablets {
       flex-direction: column-reverse;
       padding: 50px 0;
       gap: 0;
-      .tablets-info{
+      .tablets-info {
         width: 90%;
         padding: 0 30px;
-        .info-header{
-          .text-header{
+        .info-header {
+          .text-header {
             font-weight: 700;
             font-size: 25px;
             text-align: center;
           }
 
-          .logo-header{
+          .logo-header {
             display: none;
           }
         }
 
-        .main-info{
+        .main-info {
           font-size: 15px;
         }
       }
 
-      .tablets-pluses-block{
+      .tablets-pluses-block {
         background-color: white;
         flex-direction: row-reverse;
 
-        .tablets-pluses{
+        .tablets-pluses {
           justify-content: baseline;
           align-items: baseline;
 
-          .plus-block{
+          .plus-block {
             width: 80%;
             height: auto;
             font-size: 11px !important;
             text-align: center;
             padding: 10px 0;
 
-            p{
+            p {
               margin-top: 5px;
             }
 
-            &::after{
-              content: '';
+            &::after {
+              content: "";
               position: absolute;
               top: 5px;
               right: 155px !important;
@@ -369,13 +363,13 @@
           }
         }
 
-        .tablets-image{
+        .tablets-image {
           flex: 1;
-          .image{
+          .image {
             position: relative;
             max-width: 839px;
             width: 200px;
-            img{
+            img {
               width: 60vw;
               position: relative;
               top: 0px;

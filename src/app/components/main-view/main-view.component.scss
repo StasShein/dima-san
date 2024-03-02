@@ -1,95 +1,94 @@
-.main-view{
-  background-image: url('/assets/fonstola\ 1.png');
+.main-view {
+  background-image: url("/assets/fonstola\ 1.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   max-width: 1900px;
   z-index: -2;
 
-  .main-view-content{
+  .main-view-content {
     position: relative;
     z-index: 1;
 
-    .main-view-logo{
+    .main-view-logo {
       justify-content: center;
       display: flex;
       padding-top: 20px;
     }
 
-    .line{
+    .line {
       width: 100px;
       height: 4px;
-      background-color: #36C27A;
+      background-color: #36c27a;
       margin: 25px auto;
     }
 
-
-    .main-view-text{
+    .main-view-text {
       width: 840px;
       margin: 0 auto;
       font-size: 30px;
       font-weight: 700;
       color: white;
       text-align: center;
-      span{
+      span {
         color: #5eeb2a;
       }
     }
 
-    .main-view-points{
+    .main-view-points {
       display: flex;
       justify-content: space-between;
       width: 944px;
       margin: 0 auto;
       text-align: center;
 
-      .icon-done{
-        background-color: #268F71;
+      .icon-done {
+        background-color: #268f71;
         border-radius: 50%;
       }
 
-      .point{
+      .point {
         flex: 3;
         color: white;
         display: flex;
-        font-family:"Exo 2", cursive;
+        font-family: "Exo 2", cursive;
         font-weight: 600;
         font-size: 18px;
 
-        .icon-done{
-          background-color: #268F71;
+        .icon-done {
+          background-color: #268f71;
           border-radius: 50%;
           width: 50px;
           height: 50px;
 
-          img{
+          img {
             margin: 12px auto;
           }
         }
 
-        p{
+        p {
           margin: 12px;
         }
       }
 
-      .point-first{
+      .point-first {
         flex: 4;
         width: 322px;
       }
     }
 
-    .main-view-price{
+    .main-view-price {
       display: flex;
       flex-direction: column;
       justify-content: center;
 
-      .price{
+      .price {
         display: flex;
         width: 320px;
         justify-content: space-between;
         margin: 20px auto;
 
-        .old-price{
+        .old-price {
           width: 140px;
           color: #acabab;
           text-decoration: line-through;
@@ -98,101 +97,93 @@
           font-weight: 600;
         }
 
-        .new-price{
+        .new-price {
           font-family: "Exo 2", cursive;
           font-size: 35px;
           font-weight: 600;
-          color: #60FF8C;
+          color: #60ff8c;
         }
       }
 
-        .order{
-          color: white;
-          font-weight: 700;
-          font-size: 25px;
-          font-family: Exo, cursive;
-          width: 290px;
-          height: 70px;
-          background-color: #36C27A;
-          border-radius: 15px;
-          margin: 30px auto;
-          cursor: pointer;
-        }
-
+      .order {
+        color: white;
+        font-weight: 700;
+        font-size: 25px;
+        font-family: Exo, cursive;
+        width: 290px;
+        height: 70px;
+        background-color: #36c27a;
+        border-radius: 15px;
+        margin: 30px auto;
+        cursor: pointer;
+      }
     }
   }
 }
 
-
-@media screen and (max-width: 900px){
-
-  .main-view{
-    .main-view-content{
-
-      .main-view-text{
+@media screen and (max-width: 900px) {
+  .main-view {
+    .main-view-content {
+      .main-view-text {
         max-width: 840px;
         width: 90vw;
       }
 
-      .main-view-points{
+      .main-view-points {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-top: 10px;
 
-        .point{
+        .point {
           font-size: 23px;
           width: 50%;
         }
 
-        .point-first{
+        .point-first {
           width: 60%;
         }
 
-        .point-last{
+        .point-last {
           width: 40%;
         }
       }
 
-      .main-view-price{
-
-        .price{
+      .main-view-price {
+        .price {
           width: 320px;
           height: 100px;
-
         }
 
-          .order{
-            width: 400px;
-            height: 90px;
-          }
+        .order {
+          width: 400px;
+          height: 90px;
+        }
       }
     }
   }
 }
 
-@media screen and (max-width: 660px){
-  .main-view{
-    .main-view-content{
-
-      .main-view-text{
+@media screen and (max-width: 660px) {
+  .main-view {
+    .main-view-content {
+      .main-view-text {
         font-size: 23px;
       }
 
-      .main-view-points{
+      .main-view-points {
         margin: 10px 0;
 
-
-        .point{
+        .point {
           font-size: 20px;
           width: 75%;
         }
 
-        .point-first{
+        .point-first {
           width: 85%;
         }
 
-        .point-last{
+        .point-last {
           width: 65%;
         }
       }
@@ -200,26 +191,26 @@
   }
 }
 
-@media screen and (max-width: 500px){
-  .main-view{
-    .main-view-content{
+@media screen and (max-width: 500px) {
+  .main-view {
+    .main-view-content {
       position: relative;
 
-      .main-view-logo{
+      .main-view-logo {
         width: 176px;
         height: 166px;
         margin: 0 auto;
       }
 
-      .main-view-text{
+      .main-view-text {
         font-size: 18px;
       }
 
-      .main-view-points{
+      .main-view-points {
         margin: 10px auto;
         width: 80%;
 
-        .main-view-points{
+        .main-view-points {
           display: flex;
           justify-content: space-between;
           width: 944px;
@@ -227,17 +218,17 @@
           text-align: center;
         }
 
-        .point{
+        .point {
           font-size: 15px;
           width: 75%;
 
-          .icon-done{
-            background-color: #268F71;
+          .icon-done {
+            background-color: #268f71;
             border-radius: 50%;
             width: 30px;
             height: 30px;
 
-            img{
+            img {
               width: 20px;
               height: 15px;
               margin: 8px auto;
@@ -245,21 +236,20 @@
           }
         }
 
-        .point-first{
+        .point-first {
           width: 85%;
         }
 
-        .point-last{
+        .point-last {
           width: 65%;
         }
       }
 
-      .main-view-price{
-
-          .order{
-            width: 280px;
-            height: 90px;
-          }
+      .main-view-price {
+        .order {
+          width: 280px;
+          height: 90px;
+        }
       }
     }
   }

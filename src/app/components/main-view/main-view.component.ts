@@ -7,10 +7,10 @@ import { PopUpComponent } from '../pop-up/pop-up.component';
   standalone: true,
   imports: [],
   templateUrl: './main-view.component.html',
-  styleUrl: './main-view.component.scss'
+  styleUrl: './main-view.component.scss',
 })
 export class MainViewComponent {
-  constructor(public dialog: MatDialog){}
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {
     // if(document.body.clientWidth > 900){
@@ -20,24 +20,24 @@ export class MainViewComponent {
     // }
   }
 
-  public scrollTo(){
-    const element = document.querySelector('#order')
+  public scrollTo() {
+    const element = document.querySelector('#order');
 
     window.scrollTo({
       top: element!.getBoundingClientRect().top - 150,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   }
 
   openDialog() {
     const dialogRef = this.dialog.open(PopUpComponent);
-    dialogRef.afterClosed().subscribe((item) =>{
-      const  element = document.querySelector('#order')
+    dialogRef.afterClosed().subscribe((item) => {
+      const element = document.querySelector('#order');
 
       window.scrollTo({
         top: element!.getBoundingClientRect().top - 150,
-        behavior: "smooth"
-      })
-    })
+        behavior: 'smooth',
+      });
+    });
   }
 }

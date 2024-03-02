@@ -1,84 +1,80 @@
-.container{
+.container {
   position: relative;
   width: 65vw;
-  color: #002B56;
+  color: #002b56;
   padding: 50px 100px;
-  .close{
+  .close {
     position: absolute;
     top: 30px;
     right: 30px;
     cursor: pointer;
   }
 
-  .privacy{
-    h3{
+  .privacy {
+    h3 {
       font-weight: 700;
       font-size: 18px;
     }
 
-    p{
+    p {
       font-weight: 500;
       font-size: 16px;
     }
   }
 }
 
-@media screen and (max-width: 900px){
-  .container{
+@media screen and (max-width: 900px) {
+  .container {
     padding: 50px 50px;
 
-    .privacy{
-      h3{
+    .privacy {
+      h3 {
         font-size: 16px;
       }
 
-      p{
+      p {
         font-size: 14px;
       }
     }
   }
 }
 
-@media screen and (max-width: 660px){
-  .container{
+@media screen and (max-width: 660px) {
+  .container {
     padding: 30px;
-    .close{
+    .close {
       top: 20px;
       right: 30px;
     }
 
-    .privacy{
-      h3{
+    .privacy {
+      h3 {
         font-size: 14px;
       }
 
-      p{
+      p {
         font-size: 11px;
       }
     }
   }
 }
 
-@media screen and (max-width: 500px){
-  .container{
+@media screen and (max-width: 500px) {
+  .container {
     padding: 10px;
-    .close{
+    .close {
       top: 10px;
       right: 10px;
     }
 
-    .privacy{
-      h3{
+    .privacy {
+      h3 {
         font-size: 12px;
       }
 
-      p{
+      p {
         font-size: 10px;
       }
     }
   }
 }
-
-
-
-

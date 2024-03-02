@@ -6,10 +6,10 @@ import { MatDialogRef } from '@angular/material/dialog';
   standalone: true,
   imports: [],
   templateUrl: './pop-up.component.html',
-  styleUrl: './pop-up.component.scss'
+  styleUrl: './pop-up.component.scss',
 })
 export class PopUpComponent {
-  constructor(public dialogRef: MatDialogRef<any>){}
+  constructor(public dialogRef: MatDialogRef<any>) {}
 
   onNoClick(): void {
     this.dialogRef.close();

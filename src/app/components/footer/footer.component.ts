@@ -7,19 +7,16 @@ import { PrivacyComponent } from './politics/privacy/privacy.component';
   standalone: true,
   imports: [PrivacyComponent],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  styleUrl: './footer.component.scss',
 })
 export class FooterComponent {
+  constructor(public dialog: MatDialog) {}
 
-  constructor(public dialog: MatDialog){}
-
-  public scrollTo(){
+  public scrollTo() {
     window.scrollTo({
-      top: 0
-    })
+      top: 0,
+    });
   }
-
-
 
   openDialog() {
     this.dialog.open(PrivacyComponent);

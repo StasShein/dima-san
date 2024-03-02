@@ -1,4 +1,8 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+} from '@angular/core';
 import { SliderOptions, WtsSliderModule } from 'wts-slider';
 
 @Component({
@@ -10,21 +14,20 @@ import { SliderOptions, WtsSliderModule } from 'wts-slider';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SliderComponent {
-
-  constructor( private cdr: ChangeDetectorRef){}
+  constructor(private cdr: ChangeDetectorRef) {}
 
   ngOnInit(): void {
-    if(document.body.clientWidth < 900){
-      this.options.height = 780
-      this.options.navigation = false
-     }else{
-      this.options.height = 480
-      this.options.navigation = true
-     }
+    if (document.body.clientWidth < 900) {
+      this.options.height = 780;
+      this.options.navigation = false;
+    } else {
+      this.options.height = 480;
+      this.options.navigation = true;
+    }
   }
 
   ngAfterViewInit(): void {
-   this.cdr.markForCheck()
+    this.cdr.markForCheck();
   }
 
   options: SliderOptions = {
@@ -33,5 +36,5 @@ export class SliderComponent {
     breakpoint: {
       HandsetLandscape: { autoplay: true },
     },
-  }
+  };
 }

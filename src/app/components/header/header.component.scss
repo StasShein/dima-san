@@ -1,23 +1,23 @@
-.header{
+.header {
   display: flex;
   background-color: black;
   width: 100%;
   padding: 20px 0;
 
-  div{
+  div {
     flex: 1;
   }
 
-  .header-href{
+  .header-href {
     flex: 3;
     display: flex;
 
-    .main{
+    .main {
       text-decoration: underline;
-      color: #36C27A;
+      color: #36c27a;
     }
 
-    p{
+    p {
       text-align: center;
       flex: 1;
       color: white;
@@ -27,17 +27,17 @@
 }
 
 @media screen and (max-width: 900px) {
-  .header{
+  .header {
     font-size: 22px;
 
-    .header-href{
+    .header-href {
       flex-direction: column;
       font-weight: 500;
       gap: 20px;
       padding: 30px 0;
 
-      .main{
-        background-color: #36C27A;
+      .main {
+        background-color: #36c27a;
         color: white;
         border-radius: 15px;
         height: 40px;
@@ -48,12 +48,11 @@
 }
 
 @media screen and (max-width: 500px) {
-  .header{
-    .header-href{
-      p{
+  .header {
+    .header-href {
+      p {
         font-size: 15px;
       }
     }
   }
 }
-

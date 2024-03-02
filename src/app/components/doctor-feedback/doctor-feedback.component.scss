@@ -1,48 +1,48 @@
-.container{
-  background-color: #C2DEFF;
+.container {
+  background-color: #c2deff;
   padding: 70px 0;
   position: relative;
   max-width: 1900px;
 
-    .mobile{
-      display: none;
-    }
+  .mobile {
+    display: none;
+  }
 
-  .feedback{
+  .feedback {
     display: flex;
     gap: 40px;
     justify-content: center;
 
-    &-text{
+    &-text {
       font-weight: 500;
       font-size: 18px;
       max-width: 730px;
       width: 40%;
       margin-left: 10px;
 
-      h3{
+      h3 {
         font-weight: 700;
         font-size: 35px;
 
-        span{
+        span {
           color: #36c27a;
         }
       }
 
-      .doctor{
+      .doctor {
         font-weight: 600;
         font-size: 20px;
         margin-top: 0;
       }
-      h4{
+      h4 {
         font-weight: 600;
 
-        span{
+        span {
           color: #1b7748;
         }
       }
     }
-    &-image{
+    &-image {
       max-width: 780px;
       width: 50%;
       min-height: 520px;
@@ -52,7 +52,7 @@
       border-radius: 15px;
       position: relative;
 
-      img{
+      img {
         position: absolute;
         bottom: -90px;
         right: -20px;
@@ -63,24 +63,24 @@
   }
 }
 
-@media screen and (max-width: 900px){
-  .container{
-    .mobile{
+@media screen and (max-width: 900px) {
+  .container {
+    .mobile {
       display: block;
       font-weight: 700;
       font-size: 35px;
       text-align: center;
 
-      span{
+      span {
         color: #36c27a;
       }
     }
 
-    .feedback{
+    .feedback {
       flex-direction: column-reverse;
       align-items: center;
 
-      &-text{
+      &-text {
         font-weight: 500;
         font-size: 24px;
         max-width: 900px;
@@ -88,23 +88,22 @@
         margin-left: 10px;
         text-align: center;
 
-
-        h3{
+        h3 {
           display: none;
         }
 
-        .doctor{
+        .doctor {
           font-size: 26px;
         }
       }
-      &-image{
+      &-image {
         margin-top: 0;
         width: 90%;
         min-height: 520px;
         height: auto;
         background-size: cover;
 
-        img{
+        img {
           top: 270px;
           right: 0px;
           width: 370px;
@@ -115,32 +114,31 @@
   }
 }
 
-@media screen and (max-width: 500px){
-  .container{
-    .mobile{
+@media screen and (max-width: 500px) {
+  .container {
+    .mobile {
       display: block;
       font-weight: 700;
       font-size: 25px;
       text-align: center;
     }
 
-    .feedback{
-
-      &-text{
+    .feedback {
+      &-text {
         font-size: 15px;
 
-        .doctor{
+        .doctor {
           font-size: 15px;
         }
       }
-      &-image{
+      &-image {
         margin-top: 0;
         width: 100%;
         max-height: 520px;
         height: 250px;
         min-height: 0;
 
-        img{
+        img {
           top: 150px;
           right: 30px;
           width: 150px;

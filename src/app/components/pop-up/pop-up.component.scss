@@ -1,10 +1,10 @@
-.container{
+.container {
   padding: 50px 80px;
   width: 50vw;
   max-width: 1200px;
   background-image: url(/assets/order-background.png);
   background-size: cover;
-   .pop-up{
+  .pop-up {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +12,7 @@
     gap: 20px;
     color: white;
 
-    .header{
+    .header {
       font-weight: 600;
       font-size: 20px;
       display: flex;
@@ -21,41 +21,41 @@
       align-items: center;
       gap: 20px;
 
-      img{
+      img {
         width: 190px;
         height: 140px;
       }
     }
 
-    .image{
+    .image {
       display: flex;
       justify-content: center;
       flex-direction: row;
 
-      img{
+      img {
         position: relative;
         left: -45px;
         width: 340px;
         height: 265px;
       }
 
-      .text{
+      .text {
         font-size: 22px;
         width: 50%;
         font-weight: 600;
         text-align: center;
 
-        h3{
-          color: #36C27A;
+        h3 {
+          color: #36c27a;
           text-align: center;
           font-size: 30px;
           font-weight: 700;
         }
-        .order-button{
+        .order-button {
           margin: 0 auto;
           width: 75%;
           height: auto;
-          background-color: #36C27A;
+          background-color: #36c27a;
           border-radius: 15px;
           text-align: center;
           color: white;

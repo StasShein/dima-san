@@ -1,10 +1,10 @@
-.container{
-  background-image: url('/assets/show-back.png');
+.container {
+  background-image: url("/assets/show-back.png");
   color: white;
   overflow-x: visible;
 
-  .show-ingredient{
-    width:  80vw;
+  .show-ingredient {
+    width: 80vw;
     height: 524px;
     display: flex;
     justify-content: center;
@@ -12,41 +12,41 @@
     gap: 30px;
     overflow-x: visible;
 
-    .image{
+    .image {
       width: 400px;
       height: 300px;
     }
 
-    .text{
+    .text {
       width: 620px;
       font-size: 20px;
 
-      h3{
+      h3 {
         font-weight: 700;
       }
     }
   }
 }
 
-@media screen and (max-width: 900px){
-  .container{
+@media screen and (max-width: 900px) {
+  .container {
     overflow-x: hidden;
-    .show-ingredient{
+    .show-ingredient {
       width: 75vw;
       height: auto;
       flex-direction: column;
       padding: 20px 0;
 
-      .image{
+      .image {
         width: 400px;
         height: 300px;
       }
 
-      .text{
+      .text {
         width: 50vw;
         font-size: 18px;
 
-        h3{
+        h3 {
           font-weight: 700;
         }
       }

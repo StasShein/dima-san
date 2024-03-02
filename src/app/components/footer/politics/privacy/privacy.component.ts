@@ -6,7 +6,7 @@ import { MatDialogRef } from '@angular/material/dialog';
   standalone: true,
   imports: [],
   templateUrl: './privacy.component.html',
-  styleUrl: './privacy.component.scss'
+  styleUrl: './privacy.component.scss',
 })
 export class PrivacyComponent {
   constructor(public dialogRef: MatDialogRef<any>) {}

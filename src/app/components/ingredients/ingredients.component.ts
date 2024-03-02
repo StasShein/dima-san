@@ -11,22 +11,21 @@ import { data } from './components/show-ingredient/data-ingredients.const';
 @Component({
   selector: 'app-ingredients',
   standalone: true,
-  imports: [ ShowIngredientComponent],
+  imports: [ShowIngredientComponent],
   templateUrl: './ingredients.component.html',
-  styleUrl: './ingredients.component.scss'
+  styleUrl: './ingredients.component.scss',
 })
 export class IngredientsComponent {
-
   constructor(public dialog: MatDialog) {}
 
-  public data = data
+  public data = data;
 
   openDialog(num: number) {
     this.dialog.open(ShowIngredientComponent, {
       data: {
         image: this.data[num].image,
         header: this.data[num].header,
-        text: this.data[num].text
+        text: this.data[num].text,
       },
     });
   }
